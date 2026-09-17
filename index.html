@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kumar Saurav — Writer</title>
+<meta name="description" content="Writer working on education, schooling and early learning. Research features, site and product copy, video scripts, fiction.">
+
+<!--
+  ─────────────────────────────────────────────────────────────
+  STILL TO FILL IN (search for these):
+    [Video title]        → the eleven YouTube titles
+    saurav.cmr@gmail.com → confirm or swap the contact address
+    Delhi NCR            → confirm your city
+    [Journal]            → where the fiction was published, or delete that entry
+  ─────────────────────────────────────────────────────────────
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#121A2E; --ink-soft:#4A5268;
+  --paper:#E9EAE4; --paper-raised:#F3F3EE;
+  --rule:#C9CAC2; --blue:#1F4FD8;
+  --wash:#A9D7EE; --wash-soft:#CDE8F6;
+  --bg:var(--paper); --fg:var(--ink);
+  --font-ui:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --font-read:"Newsreader",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:#E9EAE4; --ink-soft:#9AA1B4;
+    --paper:#101524; --paper-raised:#182034;
+    --rule:#2C3550; --blue:#8AAEFF;
+    --wash:#27506B; --wash-soft:#1D3A50;
+    --bg:var(--paper); --fg:var(--ink);
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#E9EAE4; --ink-soft:#9AA1B4;
+  --paper:#101524; --paper-raised:#182034;
+  --rule:#2C3550; --blue:#8AAEFF;
+  --wash:#27506B; --wash-soft:#1D3A50;
+  --bg:var(--paper); --fg:var(--ink);
+}
+
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font-ui);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;}
+a{color:inherit;}
+:focus-visible{outline:2.5px solid var(--blue);outline-offset:3px;border-radius:2px;}
+
+.wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 28px;}
+@media (max-width:640px){ .wrap{padding:0 20px;} }
+
+.masthead{display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:26px 0 0;flex-wrap:wrap;}
+.wordmark{font-size:18px;font-weight:600;letter-spacing:-.02em;text-decoration:none;}
+.wordmark span{color:var(--ink-soft);font-weight:400;}
+.masthead nav{display:flex;gap:22px;font-size:15px;flex-wrap:wrap;}
+.masthead nav a{color:var(--ink-soft);text-decoration:none;}
+.masthead nav a:hover{color:var(--fg);text-decoration:underline;text-underline-offset:4px;}
+
+.hero{padding:74px 0 0;}
+.hero h1{font-size:clamp(2.3rem,6vw,4.1rem);line-height:1.03;letter-spacing:-.035em;font-weight:600;margin:0 0 22px;max-width:16ch;}
+.standfirst{font-family:var(--font-read);font-size:1.18rem;line-height:1.6;color:var(--ink-soft);max-width:56ch;margin:0 0 46px;}
+
+.brief{display:flex;gap:14px;align-items:flex-start;border-top:1px solid var(--rule);padding-top:18px;margin-bottom:22px;}
+.brief dt{font-size:13px;font-weight:600;color:var(--ink-soft);flex:0 0 auto;padding-top:3px;}
+.brief dd{margin:0;font-family:var(--font-read);font-size:1.05rem;font-style:italic;max-width:56ch;}
+
+.modes{display:flex;flex-wrap:wrap;gap:6px;border-bottom:1px solid var(--rule);}
+.mode{appearance:none;background:none;border:0;cursor:pointer;font-family:var(--font-ui);font-size:15px;font-weight:500;color:var(--ink-soft);padding:10px 14px;margin-bottom:-1px;border-bottom:3px solid transparent;transition:color .15s ease, background-color .15s ease;}
+.mode:hover{color:var(--fg);background:var(--wash-soft);}
+.mode[aria-selected="true"]{color:var(--fg);border-bottom-color:var(--blue);background:var(--wash-soft);}
+
+.sample{background:var(--paper-raised);border:1px solid var(--rule);border-top:0;padding:34px 34px 28px;min-height:380px;}
+@media (max-width:640px){ .sample{padding:24px 20px;min-height:0;} }
+.sample-body{font-family:var(--font-read);font-size:1.12rem;line-height:1.66;max-width:62ch;}
+.sample-body p{margin:0 0 1.05em;}
+.sample-body p:last-child{margin-bottom:0;}
+.sample-body .dir{font-family:var(--font-ui);font-size:.86rem;font-weight:500;color:var(--ink-soft);}
+.sample-body .ui-row{display:grid;grid-template-columns:155px minmax(0,1fr);gap:6px 22px;padding:11px 0;border-top:1px solid var(--rule);}
+.sample-body .ui-row:first-of-type{border-top:0;padding-top:0;}
+.sample-body .ui-row dt{font-family:var(--font-ui);font-size:.84rem;font-weight:500;color:var(--ink-soft);padding-top:5px;}
+.sample-body .ui-row dd{margin:0;font-size:1.05rem;}
+@media (max-width:640px){ .sample-body .ui-row{grid-template-columns:1fr;gap:2px;} .sample-body .ui-row dt{padding-top:0;} }
+.sample-body .cta-line{font-family:var(--font-ui);font-weight:600;font-size:.98rem;display:inline-block;border-bottom:3px solid var(--wash);}
+.sample-meta{font-size:13.5px;color:var(--ink-soft);margin-top:26px;padding-top:14px;border-top:1px solid var(--rule);}
+.fade-in{animation:rise .34s ease both;}
+@keyframes rise{from{opacity:0;transform:translateY(7px);}to{opacity:1;transform:none;}}
+@media (prefers-reduced-motion: reduce){ .fade-in{animation:none;} *{transition-duration:.01ms !important;} }
+
+section{padding:92px 0 0;}
+.sec-head{font-size:clamp(1.5rem,3vw,2rem);font-weight:600;letter-spacing:-.025em;margin:0 0 6px;}
+.sec-sub{font-family:var(--font-read);color:var(--ink-soft);font-size:1.05rem;margin:0 0 40px;max-width:54ch;}
+.sub-head{font-size:1.05rem;font-weight:600;margin:52px 0 0;padding-bottom:10px;}
+
+.service{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:18px 50px;padding:26px 0;border-top:1px solid var(--rule);}
+.service:last-of-type{border-bottom:1px solid var(--rule);}
+.service h3{font-size:1.2rem;font-weight:600;letter-spacing:-.02em;margin:0;}
+.service p{font-family:var(--font-read);margin:0 0 10px;font-size:1.04rem;line-height:1.62;}
+.service .deliv{font-size:14px;color:var(--ink-soft);font-family:var(--font-ui);}
+@media (max-width:720px){ .service{grid-template-columns:1fr;gap:10px;} }
+
+.index{border-top:1px solid var(--rule);}
+.entry{border-bottom:1px solid var(--rule);}
+.entry summary{list-style:none;cursor:pointer;padding:20px 4px;display:grid;grid-template-columns:132px minmax(0,1fr) auto;gap:8px 24px;align-items:baseline;}
+.entry summary::-webkit-details-marker{display:none;}
+.entry summary:hover{background:var(--wash-soft);}
+.entry summary:hover .title{text-decoration:underline;text-underline-offset:4px;}
+.kind{font-size:13.5px;color:var(--ink-soft);font-weight:500;}
+.title{font-size:1.1rem;font-weight:500;letter-spacing:-.015em;}
+.title em{font-family:var(--font-read);font-style:normal;color:var(--ink-soft);font-size:.95rem;display:block;margin-top:3px;font-weight:400;}
+.year{font-size:13.5px;color:var(--ink-soft);font-variant-numeric:tabular-nums;}
+.entry-body{padding:2px 4px 26px;}
+.entry-body .excerpt{font-family:var(--font-read);font-size:1.05rem;line-height:1.65;max-width:60ch;margin:0 0 14px;padding-left:16px;border-left:3px solid var(--wash);}
+.entry-body .note{font-size:14.5px;color:var(--ink-soft);max-width:60ch;margin:0 0 14px;}
+.readlink{font-size:14.5px;font-weight:500;text-decoration:none;border-bottom:2px solid var(--wash);}
+.readlink:hover{border-bottom-color:var(--blue);}
+@media (min-width:721px){ .entry-body{margin-left:156px;} }
+@media (max-width:720px){ .entry summary{grid-template-columns:1fr auto;} .kind{grid-column:1/-1;} }
+
+.roster{border-top:1px solid var(--rule);}
+.roster a{display:grid;grid-template-columns:132px minmax(0,1fr) auto;gap:6px 24px;align-items:baseline;padding:14px 4px;border-bottom:1px solid var(--rule);text-decoration:none;}
+.roster a:hover{background:var(--wash-soft);}
+.roster a:hover .rt{text-decoration:underline;text-underline-offset:4px;}
+.rt{font-size:1.02rem;font-weight:500;}
+.rgo{font-size:13.5px;color:var(--ink-soft);}
+@media (max-width:720px){ .roster a{grid-template-columns:1fr auto;} .roster .kind{grid-column:1/-1;} }
+
+.nda{font-family:var(--font-read);font-size:1.04rem;color:var(--ink-soft);max-width:58ch;margin:26px 0 0;padding-left:16px;border-left:3px solid var(--rule);}
+
+.about{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:50px;align-items:start;}
+.about p{font-family:var(--font-read);font-size:1.12rem;line-height:1.7;margin:0 0 1.05em;}
+.facts{border-top:1px solid var(--rule);padding-top:16px;font-size:15px;}
+.facts div{display:flex;justify-content:space-between;gap:16px;padding:7px 0;border-bottom:1px solid var(--rule);}
+.facts dt{color:var(--ink-soft);margin:0;}
+.facts dd{margin:0;text-align:right;}
+@media (max-width:720px){ .about{grid-template-columns:1fr;gap:34px;} }
+
+.contact{margin-top:92px;background:var(--paper-raised);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+.contact .wrap{padding-top:70px;padding-bottom:70px;}
+.contact h2{font-size:clamp(1.7rem,4vw,2.6rem);font-weight:600;letter-spacing:-.03em;margin:0 0 14px;max-width:20ch;}
+.contact p{font-family:var(--font-read);font-size:1.1rem;color:var(--ink-soft);max-width:50ch;margin:0 0 30px;}
+.email{font-size:clamp(1.1rem,3vw,1.7rem);font-weight:600;letter-spacing:-.02em;text-decoration:none;border-bottom:4px solid var(--wash);padding-bottom:2px;display:inline-block;overflow-wrap:anywhere;}
+.email:hover{border-bottom-color:var(--blue);}
+
+footer{padding:30px 0 50px;font-size:14px;color:var(--ink-soft);}
+footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;}
+footer a{text-decoration:none;}
+footer a:hover{text-decoration:underline;text-underline-offset:3px;}
+</style>
+</head>
+<body>
+
+<header class="wrap masthead">
+  <a class="wordmark" href="#top">Kumar Saurav <span>— writer</span></a>
+  <nav>
+    <a href="#what">What I write</a>
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <div class="wrap hero">
+    <h1>One story. Six ways to tell it.</h1>
+    <p class="standfirst">I write about families and the bills they didn't see coming — as research, as the pages that sell a platform, as the words inside it, as video scripts, and as screenplays in Hindi, Bhojpuri and English. Same preoccupation every time. Below is one of them, told six ways.</p>
+
+    <dl class="brief">
+      <dt>The brief</dt>
+      <dd>A family is handed a bill at the exact moment it has the least room to argue about it.</dd>
+    </dl>
+
+    <div class="modes" role="tablist" aria-label="Writing modes">
+      <button class="mode" role="tab" id="tab-web" aria-controls="panel" aria-selected="true" data-key="web">Landing page</button>
+      <button class="mode" role="tab" id="tab-ui" aria-controls="panel" aria-selected="false" data-key="ui">UI copy</button>
+      <button class="mode" role="tab" id="tab-article" aria-controls="panel" aria-selected="false" data-key="article">Article</button>
+      <button class="mode" role="tab" id="tab-short" aria-controls="panel" aria-selected="false" data-key="short">45-second short</button>
+      <button class="mode" role="tab" id="tab-long" aria-controls="panel" aria-selected="false" data-key="long">Long-form script</button>
+      <button class="mode" role="tab" id="tab-fiction" aria-controls="panel" aria-selected="false" data-key="fiction">Screenplay</button>
+    </div>
+
+    <div class="sample" id="panel" role="tabpanel" aria-labelledby="tab-web">
+      <div class="sample-body" id="sample-body"></div>
+      <p class="sample-meta" id="sample-meta"></p>
+    </div>
+  </div>
+
+  <section class="wrap" id="what">
+    <h2 class="sec-head">What I write</h2>
+    <p class="sec-sub">Six formats, one habit: find the single true thing the piece is about, then cut everything that isn't holding it up.</p>
+
+    <div class="service">
+      <h3>Research &amp; features</h3>
+      <div>
+        <p>Data-led reports and explainers. I'm at my best when a subject looks dull from the outside — a fee table, an admission rule — and turns out to have a mechanism inside it that changes what a reader does next.</p>
+        <p class="deliv">Analysis, methodology note, full draft, charts specced.</p>
+      </div>
+    </div>
+
+    <div class="service">
+      <h3>Writing about businesses</h3>
+      <div>
+        <p>Company and school profiles, founder stories, case studies, ghostwritten posts. The work is mostly getting people to say the interesting version of what they do, then holding them to it on the page.</p>
+        <p class="deliv">Interview, draft, one round of stakeholder wrangling.</p>
+      </div>
+    </div>
+
+    <div class="service">
+      <h3>Site &amp; marketing copy</h3>
+      <div>
+        <p>Homepages, category and listing pages, short descriptions, email. Most sites fail because nobody decided what the business is actually claiming. I start there, then write the shortest version that still earns the click.</p>
+        <p class="deliv">Messaging notes, page-by-page drafts, two revision rounds.</p>
+      </div>
+    </div>
+
+    <div class="service">
+      <h3>Product &amp; UI copy</h3>
+      <div>
+        <p>Buttons, empty states, errors, onboarding, form labels. The reader here is mid-task and slightly anxious — a parent halfway through an application — so every word has to earn its place and none of them get to be clever.</p>
+        <p class="deliv">Flow-by-flow copy, a voice guide, terminology kept consistent.</p>
+      </div>
+    </div>
+
+    <div class="service">
+      <h3>Video scripts</h3>
+      <div>
+        <p>Shorts built around a single turn, and long-form scripts with an argument underneath. Written the way someone would say it out loud, not the way it reads on paper.</p>
+        <p class="deliv">Hook variants, beat outline, full script, on-screen text.</p>
+      </div>
+    </div>
+
+    <div class="service">
+      <h3>Screenplays &amp; short fiction</h3>
+      <div>
+        <p>Short scripts and prose in Hindi, Bhojpuri and English — mostly two-handers built for a small cast and one location, and occasionally farce. Writing dialogue in a language people actually argue in is what keeps the rest of the work honest.</p>
+        <p class="deliv">Original shorts, commissions, dialogue passes, translation between the three.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="work">
+    <h2 class="sec-head">Selected work</h2>
+    <p class="sec-sub">Open any line to read an excerpt.</p>
+
+    <div class="index">
+
+      <details class="entry" open>
+        <summary>
+          <span class="kind">Research feature</span>
+          <span class="title">The Ezyschooling Fee Index<em>Fee study on private schools in India</em></span>
+          <span class="year">2026</span>
+        </summary>
+        <div class="entry-body">
+          <p class="excerpt">Tuition rises land in a renewal notice, so a family sees them coming. A deposit increase appears once, unannounced, attached to an offer of admission — at the exact moment a family has the least room to compare or negotiate.</p>
+          <p class="note">Built from 119,629 school-class-session records across 6,879 schools and 42 cities. Wrote the methodology, the analysis and the report: fee composition, city and board comparisons, revision frequency, and a fourteen-year total cost of ₹14.6 lakh per child.</p>
+          <a class="readlink" href="https://ezyschooling.com/parenting/expert/school-fees-analysed-through-ezyschooling-fee-index" target="_blank" rel="noopener">Read the study</a>
+        </div>
+      </details>
+
+      <details class="entry">
+        <summary>
+          <span class="kind">Article archive</span>
+          <span class="title">Ezyschooling, parenting desk<em>91 articles on admissions, early learning and school choice</em></span>
+          <span class="year">2022—</span>
+        </summary>
+        <div class="entry-body">
+          <p class="note">Ongoing byline covering nursery admissions, inclusive education, emotional development and school selection for parents across Delhi NCR and beyond. Around 13,000 reads.</p>
+          <a class="readlink" href="https://ezyschooling.com/blog/author/kumar-saurav" target="_blank" rel="noopener">See all articles</a>
+        </div>
+      </details>
+
+      <details class="entry">
+        <summary>
+          <span class="kind">Article</span>
+          <span class="title">Understanding Anger<em>Emotional strength in children and adolescents</em></span>
+          <span class="year">2026</span>
+        </summary>
+        <div class="entry-body">
+          <p class="note">Reported with Podar Global School, Bangalore, on how schools can teach children to recognise and manage anger rather than suppress it.</p>
+          <a class="readlink" href="https://ezyschooling.com/parenting/expert/helps-children-understand-and-manage-anger-to-build-emotional-strength" target="_blank" rel="noopener">Read it</a>
+        </div>
+      </details>
+
+      <details class="entry">
+        <summary>
+          <span class="kind">Article</span>
+          <span class="title">Fostering Every Learner<em>Inclusive behaviour support at The Scindia School</em></span>
+          <span class="year">2025</span>
+        </summary>
+        <div class="entry-body">
+          <p class="note">A look at what an inclusive-education model looks like in practice, written for parents deciding whether a school can support their child.</p>
+          <a class="readlink" href="https://ezyschooling.com/parenting/expert/inclusive-education-model" target="_blank" rel="noopener">Read it</a>
+        </div>
+      </details>
+
+      <details class="entry">
+        <summary>
+          <span class="kind">Article</span>
+          <span class="title">Improving Your Odds in Delhi Nursery Admissions<em>A practical guide for parents</em></span>
+          <span class="year">2025</span>
+        </summary>
+        <div class="entry-body">
+          <p class="note">Written against the points system and the calendar, for families applying to Delhi nursery seats.</p>
+          <a class="readlink" href="https://ezyschooling.com/parenting/expert/increase-your-chances-of-delhi-nursery-admission" target="_blank" rel="noopener">Read it</a>
+        </div>
+      </details>
+
+    </div>
+
+    <h3 class="sub-head">Long-form video scripts</h3>
+    <div class="roster">
+      <a href="https://www.youtube.com/watch?v=e-d6uOEJKF0" target="_blank" rel="noopener"><span class="kind">Script</span><span class="rt">[Video title]</span><span class="rgo">Watch</span></a>
+      <a href="https://www.youtube.com/watch?v=n4epPQzydLU" target="_blank" rel="noopener"><span class="kind">Script</span><span class="rt">[Video title]</span><span class="rgo">Watch</span></a>
+      <a href="https://www.youtube.com/watch?v=XydQ6HJ3_NM" target="_blank" rel="noopener"><span class="kind">Script</span><span class="rt">[Video title]</span><span class="rgo">Watch</span></a>
+      <a href="https://www.youtube.com/watch?v=vc7eRphUsy8" target="_blank" rel="noopener"><span class="kind">Script</span><span class="rt">[Video title]</span><span class="rgo">Watch</span></a>
+      <a href="https://www.youtube.com/watch?v=q7YXFpeEUD8" target="_blank" rel="noopener"><span class="kind">Script</span><span class="rt">[Video title]</span><span class="rgo">Watch</span></a>
+    </div>
+
+    <h3 class="sub-head">Shorts</h3>
+    <div class="roster">
+      <a href="https://www.youtube.com/shorts/OwxdS7Bzzjg" target="_blank" rel="noopener"><span class="kind">Short</span><span class="rt">[Video title]</span><span class="rgo">Watch</span></a>
+      <a href="https://www.youtube.com/shorts/xEl0cv-Ihig" target="_blank" rel="noopener"><span class="kind">Short</span><span class="rt">[Video title]</span><span class="rgo">Watch</span></a>
+      <a href="https://www.youtube.com/shorts/o6STQnZOzWE" target="_blank" rel="noopener"><span class="kind">Short</span><span class="rt">[Video title]</span><span class="rgo">Watch</span></a>
+      <a href="https://www.youtube.com/shorts/MTxvMX_SCy0" target="_blank" rel="noopener"><span class="kind">Short</span><span class="rt">[Video title]</span><span class="rgo">Watch</span></a>
+      <a href="https://www.youtube.com/shorts/8teH4gBWJL8" target="_blank" rel="noopener"><span class="kind">Short</span><span class="rt">[Video title]</span><span class="rgo">Watch</span></a>
+      <a href="https://www.youtube.com/shorts/cRguzasSQH0" target="_blank" rel="noopener"><span class="kind">Short</span><span class="rt">[Video title]</span><span class="rgo">Watch</span></a>
+    </div>
+
+    <h3 class="sub-head">Screenplays &amp; short fiction</h3>
+    <p class="sec-sub" style="margin-bottom:0;">Nine pieces in three languages. They keep circling one thing — somebody is handed a bill they can't refuse — which turns out to work as tragedy and, when I let it, as farce.</p>
+
+    <div class="index" style="margin-top:26px;">
+
+      <details class="entry">
+        <summary>
+          <span class="kind">Screenplay · Bhojpuri</span>
+          <span class="title">Terah Din<em>Thirteen days of funeral rites, and what grief is billed at</em></span>
+          <span class="year">Short</span>
+        </summary>
+        <div class="entry-body">
+          <p class="excerpt">Babuji chal gahilan magar karza chhod gahilan. Ab dekha, humnike kekar terhavi manawake — garibi ka, ya aapan?<br><span style="font-family:var(--font-ui);font-size:.85rem;color:var(--ink-soft);">Father's gone but he left the debt. So whose thirteenth day are we observing — our poverty's, or his?</span></p>
+          <p class="note">An old man dies at dawn and the family has thirteen days to bury him properly. The priest's list grows, the land dispute surfaces, and a six-year-old knocks over the ashes. Written in Bhojpuri.</p>
+        </div>
+      </details>
+
+      <details class="entry">
+        <summary>
+          <span class="kind">Short fiction · English</span>
+          <span class="title">The Last Shift<em>Seven men sent to seal a radioactive breach</em></span>
+          <span class="year">Prose</span>
+        </summary>
+        <div class="entry-body">
+          <p class="excerpt">They weren't friends. Just men. Men with no wives, no kids. No one waiting. Just names on a government list: Single. No dependents.</p>
+          <p class="note">Told in fourteen numbered days, one name crossed off the board at a time. The men were chosen for the job because nobody would come asking after them, and the story never lets you forget that was the selection criterion.</p>
+        </div>
+      </details>
+
+      <details class="entry">
+        <summary>
+          <span class="kind">Screenplay · Hindi</span>
+          <span class="title">Mrit Aur Mrityu<em>A man meets Death, who turns out to know less than he does</em></span>
+          <span class="year">Short</span>
+        </summary>
+        <div class="entry-body">
+          <p class="excerpt">Mujhe kisi cheez ka yakeen nahi. Mere paas khud ko kisi aur se tulna karne ke liye kabhi kuch raha hi nahi.</p>
+          <p class="note">A two-hander that runs on one idea: Death has no answers, no scales, possibly no hands, and has never once been asked what it wants.</p>
+        </div>
+      </details>
+
+      <details class="entry">
+        <summary>
+          <span class="kind">Screenplay · Hindi</span>
+          <span class="title">Abhi Bhi Yahin Hoon<em>A father talks into the dark, and one night it answers</em></span>
+          <span class="year">Short</span>
+        </summary>
+        <div class="entry-body">
+          <p class="excerpt">Yeh maafi nahi hai. Main woh maaf nahi kar sakta jo mujhe yaad hi nahi ki aapne mere saath kiya.</p>
+          <p class="note">After a crash, a father needs to be absolved and his son cannot do it — not out of anger, but because the memory that would make absolution possible isn't there.</p>
+        </div>
+      </details>
+
+      <details class="entry">
+        <summary>
+          <span class="kind">Screenplay · Hindi</span>
+          <span class="title">Lifafa<em>Two brothers and their father's last letter</em></span>
+          <span class="year">Short</span>
+        </summary>
+        <div class="entry-body">
+          <p class="excerpt">Unhone apni aakhri likhi hui cheez ka bharosa mujh par kiya. Tum par nahi.</p>
+          <p class="note">A sealed envelope on a desk between two men, neither of whom will let go of it. The argument is never really about the letter.</p>
+        </div>
+      </details>
+
+      <details class="entry">
+        <summary>
+          <span class="kind">Screenplay · English</span>
+          <span class="title">The Certificate<em>A builder, an engineer, and two per cent</em></span>
+          <span class="year">Short</span>
+        </summary>
+        <div class="entry-body">
+          <p class="excerpt">"Two percent of eighty lakh. That's my entire margin, sir. You're asking for my profit." — "I'm asking for the file to move. What you call it is your business."</p>
+          <p class="note">Set in a site office at a half-built government school. Three to four minutes, two actors, one table.</p>
+        </div>
+      </details>
+
+      <details class="entry">
+        <summary>
+          <span class="kind">Screenplay · Hindi</span>
+          <span class="title">Sawaal<em>A father, a minister, and a leaked exam paper</em></span>
+          <span class="year">Short</span>
+        </summary>
+        <div class="entry-body">
+          <p class="excerpt">Aapne kuch karne ko nahi kaha. Bas kuch rokne ko bhi nahi kaha.</p>
+          <p class="note">No cameras, no press conference. A man who lost a son to an institution's convenience asks the one question nobody made the institution answer.</p>
+        </div>
+      </details>
+
+      <details class="entry">
+        <summary>
+          <span class="kind">Comedy · English</span>
+          <span class="title">Broke Kingdom<em>A bankrupt monarchy, in four acts</em></span>
+          <span class="year">Short</span>
+        </summary>
+        <div class="entry-body">
+          <p class="excerpt">"Fine. I abdicate — but only because I'm tired and I miss butter."</p>
+          <p class="note">The king threw the kingdom's grain into fountains for his birthday, the princess gambled the last tiara on a squirrel race, and the revolutionary at the gate has a legitimate grievance and an illegitimate birth. Farce, but the bread riots are real.</p>
+        </div>
+      </details>
+
+      <details class="entry">
+        <summary>
+          <span class="kind">Comedy · English</span>
+          <span class="title">Planned &amp; Prepared<em>A man empties a pharmacy before anyone knows why</em></span>
+          <span class="year">Short</span>
+        </summary>
+        <div class="entry-body">
+          <p class="excerpt">"For what — an alien attack?" — "Aliens don't replicate exponentially."</p>
+          <p class="note">Ten minutes of deadpan between a hypochondriac in an ill-fitting PPE suit and a bored pharmacy clerk. The joke runs the whole script; the muted television under the counter finishes it.</p>
+        </div>
+      </details>
+
+    </div>
+    <h3 class="sub-head">Site and product copy</h3>
+    <p class="nda">Most of this work is live inside a product rather than published under a byline — listing pages, comparison flows, forms and the text that walks a parent through an application. I can walk through specific pages and the thinking behind them on a call.</p>
+  </section>
+
+  <section class="wrap about" id="about">
+    <div>
+      <h2 class="sec-head">About</h2>
+      <p>I'm a senior content writer with a business management background and about five years of writing behind me, three and a half of them in edtech.</p>
+      <p>Most of that time has been spent on one audience: parents trying to make an expensive, irreversible decision about a child's schooling, usually with incomplete information and a deadline. That's shaped how I write everything else. If a sentence doesn't help someone decide or do something, it goes.</p>
+      <p>The fiction is the same preoccupation in another form. A priest itemising funeral rites for a family that can't afford them is the fee report with the numbers taken out. A bankrupt king throwing grain into fountains is the same thing played for laughs. I didn't plan either; I noticed it after the fact.</p>
+      <p>The range is the useful part. One brief can become a report, a landing page, the microcopy inside the product, or a ninety-second script — and I'd rather one person hold all of them than have four people argue about tone.</p>
+    </div>
+    <dl class="facts">
+      <div><dt>Writing since</dt><dd>2021</dd></div>
+      <div><dt>Articles published</dt><dd>91</dd></div>
+      <div><dt>Specialism</dt><dd>Education, ECCE</dd></div>
+      <div><dt>Largest dataset written up</dt><dd>119,629 records</dd></div>
+      <div><dt>Writes in</dt><dd>English, Hindi, Bhojpuri</dd></div>
+      <div><dt>Based in</dt><dd>Delhi NCR</dd></div>
+    </dl>
+  </section>
+
+</main>
+
+<div class="contact" id="contact">
+  <div class="wrap">
+    <h2>Tell me what it's supposed to do.</h2>
+    <p>A sentence about the project and the deadline is enough to start. I'll say quickly if I'm the wrong person for it.</p>
+    <a class="email" href="mailto:saurav.cmr@gmail.com">saurav.cmr@gmail.com</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>Kumar Saurav, writer</span>
+    <span><a href="https://www.instagram.com/theeasy_writer" target="_blank" rel="noopener">Poetry on Instagram</a> &nbsp; <a href="https://www.linkedin.com/in/kumar-saurav-4ba46416b/" target="_blank" rel="noopener">LinkedIn</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var samples = {
+    web: {
+      meta: "Landing page hero for a school discovery platform. The job is to be believed in four seconds.",
+      html:
+        '<p><strong>Know the fee before the notice arrives.</strong></p>' +
+        '<p>Compare 6,800 schools on what they actually cost &mdash; not the tuition line, the whole bill. Admission, transport, deposits, class by class, city by city.</p>' +
+        '<p>Every figure comes from the school&rsquo;s own published fees. Where a school won&rsquo;t publish, we say so.</p>' +
+        '<p><span class="cta-line">Start with your city</span></p>'
+    },
+    ui: {
+      meta: "Interface text inside the comparison tool. The job is to be invisible and never make a parent read a line twice.",
+      html:
+        '<dl class="ui-row"><dt>Primary button</dt><dd>Compare these three schools</dd></dl>' +
+        '<dl class="ui-row"><dt>Empty shortlist</dt><dd>Nothing shortlisted yet. Add a school and we&rsquo;ll line the fees up side by side.</dd></dl>' +
+        '<dl class="ui-row"><dt>Fee tooltip</dt><dd>This is the annual total, including admission, transport and every other head the school charges.</dd></dl>' +
+        '<dl class="ui-row"><dt>Missing data</dt><dd>This school hasn&rsquo;t published its fees. We&rsquo;ve asked. You&rsquo;ll get an email if they answer.</dd></dl>' +
+        '<dl class="ui-row"><dt>After applying</dt><dd>Sent. Schools usually reply within five working days. Nothing more to do for now.</dd></dl>'
+    },
+    article: {
+      meta: "Opening of a data-led report. The job is to make a fee table feel urgent.",
+      html:
+        '<p>A school charges one figure for 2024&ndash;25. Twelve months later it charges a figure nine or ten per cent higher. Nobody announces this. It arrives as a line on a renewal notice, and the family absorbs it.</p>' +
+        '<p>We went through 119,629 fee records across 6,879 schools in 42 cities to find out whether that rise follows a pattern. It does &mdash; about eight per cent, in 83% of year-on-year comparisons.</p>' +
+        '<p>But the tuition rise is not the part that hurts. The part that hurts moves rarely, jumps by a quarter when it does, and lands on the day you are least able to argue about it.</p>'
+    },
+    short: {
+      meta: "Vertical video, 45 seconds. The job is to survive the first two.",
+      html:
+        '<p>Your child&rsquo;s school fee isn&rsquo;t one number. It&rsquo;s seventy-six.</p>' +
+        '<p>Tuition is the one they quote you. That&rsquo;s about two-thirds of the bill. The rest is admission, annual, development, transport, security, caution money.</p>' +
+        '<p>And here&rsquo;s the part nobody tells you. Tuition goes up around eight per cent a year, every year. You see it coming.</p>' +
+        '<p>Security deposits move maybe once in four years &mdash; and when they move, they jump twenty-five per cent. Charged at admission. The one moment you can&rsquo;t walk away.</p>' +
+        '<p>Ask when the deposit was last revised. Ask before you sign.</p>'
+    },
+    long: {
+      meta: "Cold open from a twelve-minute video. The job is to buy the next ten minutes.",
+      html:
+        '<p class="dir">[COLD OPEN &mdash; kitchen table, admission forms, a calculator nobody is using yet]</p>' +
+        '<p>There&rsquo;s a number nobody hands you when you choose a school. Not the monthly fee. Not the admission fee. The whole thing &mdash; fourteen years of it, nursery to Class 12.</p>' +
+        '<p>For a typical Indian private day school, that number is fourteen lakh fifty-six thousand rupees.</p>' +
+        '<p class="dir">[BEAT &mdash; hold on the form]</p>' +
+        '<p>And about four and a half lakh of it doesn&rsquo;t exist yet. It&rsquo;s the compounding of an ordinary eight per cent rise, every year, for fourteen years. No brochure will ever show you that line.</p>' +
+        '<p class="dir">[TITLE CARD]</p>'
+    },
+    fiction: {
+      meta: "From TERAH DIN, a screenplay in Bhojpuri. Day seven of a father's funeral rites. The job is to let the reader work it out.",
+      html:
+        '<p class="dir">EXT. COURTYARD &mdash; DAY 7</p>' +
+        '<p><strong>DUBEY:</strong> Chandi ka lota, shuddh ghee, kapde ka daan, aa tees rupaye dakshina. Aa paanch pandit ka khaaye ka intezaam terhavi tak kar da jaa.</p>' +
+        '<p><strong>KAMLA:</strong> Arre babuji ke ghee kabbo na milal, aa tohke kilo kilo ghee chahi!</p>' +
+        '<p class="dir">Father never saw ghee in his life, and you want it by the kilo.</p>' +
+        '<p><strong>DUBEY:</strong> Sanskaar galat bhayil tah baap bhoot banke nachihan.</p>' +
+        '<p class="dir">Aman looks up at the roof of the hut.</p>'
+    }
+  };
+
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.mode'));
+  var body = document.getElementById('sample-body');
+  var meta = document.getElementById('sample-meta');
+  var panel = document.getElementById('panel');
+
+  function show(key, animate){
+    var s = samples[key];
+    if(!s) return;
+    body.innerHTML = s.html;
+    meta.textContent = s.meta;
+    if(animate){ body.classList.remove('fade-in'); void body.offsetWidth; body.classList.add('fade-in'); }
+    tabs.forEach(function(t){
+      var on = t.dataset.key === key;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      if(on) panel.setAttribute('aria-labelledby', t.id);
+    });
+  }
+
+  tabs.forEach(function(t, i){
+    t.addEventListener('click', function(){ show(t.dataset.key, true); });
+    t.addEventListener('keydown', function(e){
+      var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if(!d) return;
+      e.preventDefault();
+      var next = tabs[(i + d + tabs.length) % tabs.length];
+      next.focus();
+      show(next.dataset.key, true);
+    });
+  });
+
+  show('web', false);
+})();
+</script></body></html>
